@@ -29,7 +29,6 @@ nav{
     color:white;
    
     article{
-
         form{
             height:100px;
             width:80%;
@@ -53,14 +52,22 @@ nav{
         .container-content{
             .image img {
                 display:block;
-                width:600px;
+                width:400px;
                 margin:20px auto;
                 b{
                     font-weight:bold;
 
                 }
             }
+            .image img:hover target {
+                background-color:black;
+                height:100%;
+                position:absolute;
+            }
         }
-
+    }
+    div div h2{
+        font-size:35px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }

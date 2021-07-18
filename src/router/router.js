@@ -1,16 +1,17 @@
-import { sendApiRequest } from '../controllers/home';
-import { next } from '../controllers/next';
+import { home }  from '.././controllers/home';
+import   next  from '../controllers/next';
 
-    
 
-export const router = ( router ) => {
+export const router = async ( router ) => {
+    const root  = document.querySelector('#root');
+    root.innerHTML = '';
     switch ( router ){  
-        case '#/home': {
-            sendApiRequest();
+        case '#/PictureOfDay': {
+            root.appendChild( await home() )  
         }
         break;
-        case '#/next': {
-            next();
+        case '#/NeoWs': {
+            root.appendChild( await next() );
         }
         break;
     }
