@@ -1,4 +1,4 @@
-import { home }  from '.././controllers/home';
+import  { pictureOfDay }   from '../controllers/pictureOfDay';
 import   next  from '../controllers/next';
 
 
@@ -7,7 +7,7 @@ export const router = async ( router ) => {
     root.innerHTML = '';
     switch ( router ){  
         case '#/PictureOfDay': {
-            root.appendChild( await home() )  
+            root.appendChild( await pictureOfDay() )  
         }
         break;
         case '#/NeoWs': {
