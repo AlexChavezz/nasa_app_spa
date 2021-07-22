@@ -5,9 +5,11 @@
     color:black;
     font-family: 'Roboto', sans-serif;
 }
-
 nav{
     height:7vh;
+    background-color:#181818;
+    color:white;
+    
     /*display: flex;
     align-items: center;
     justify-content:center;
@@ -29,6 +31,7 @@ nav{
     color:white;
    
     article{
+
         form{
             height:100px;
             width:80%;
@@ -64,6 +67,18 @@ nav{
                 height:100%;
                 position:absolute;
             }
+        }
+    }
+    footer{
+        height:120px;
+        left:0px;
+        bottom:0px;
+        font-weight:bold;
+        letter-spacing:1px;
+        background-color: #181818;
+        p{
+            color:white;
+            padding:10px;
         }
     }
     div div h2{

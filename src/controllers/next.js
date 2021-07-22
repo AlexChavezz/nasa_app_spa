@@ -1,4 +1,4 @@
-import  views  from '../views/something.html';
+/*import  views  from '../views/home.html';
 
 export default async () => {
     const divElement = document.createElement('div');
@@ -21,3 +21,4 @@ const sendApiRequest = async () => {
 // const showContent = (divElement, data) => {
 //     divElement.querySelector('.count').innerHTML = data.element_count;
 // }
+*/

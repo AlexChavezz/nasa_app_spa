@@ -1,24 +1,23 @@
-import  { pictureOfDay }   from '../controllers/pictureOfDay';
-import   next  from '../controllers/next';
+import { pictureOfDay } from '../controllers/pictureOfDay';
+import next from '../controllers/next';
+import { error_404 } from '../controllers/error-404';
+import home from '../controllers/home';
+export const router = async (router) => {
 
-
-export const router = async ( router ) => {
-    
-    const root  = document.querySelector('#root');
+    const root = document.querySelector('#root');
     root.innerHTML = '';
-    switch ( router ){
+    switch (router) {
         case '': {
-            root.innerHTML =`<h1>You're in home</h1>`;
+            root.appendChild( home() );
         }
-        break;
+            break;
         case '#/PictureOfDay': {
-            root.appendChild( await pictureOfDay() )  
+            root.appendChild(await pictureOfDay());
         }
-        break;
-        /*case '#/NeoWs': {
-            root.appendChild( await next() );
+            break;
+        default: {
+            root.appendChild( error_404() );
         }
-        break;*/
+            break;
     }
-
-} 
+}
