@@ -70,7 +70,7 @@ nav{
         }
     }
     footer{
-        height:120px;
+        height:100px;
         left:0px;
         bottom:0px;
         font-weight:bold;
@@ -79,10 +79,36 @@ nav{
         p{
             color:white;
             padding:10px;
+            font-size:14px;
+            a{
+                color:gold;
+            }
+            :hover{
+                color:#ccc;
+                text-decoration: none;
+            }
         }
     }
     div div h2{
         font-size:35px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+}
+.imgs{
+    margin-top: 100px;
+    #earth{
+        width:300px;
+    }
+    #ovni{
+        width:100px;
+        animation: girar 2s infinite linear;
+        position:absolute;
+        right:750px;
+        top:200px;
+    }
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg)  translate(-150px) rotate(0deg); }
+    to { transform: rotate(360deg) translate(-150px) rotate(-360deg); }
 }
